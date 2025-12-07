@@ -19,7 +19,7 @@ export const WhyRecoveryTitle = styled.h2`
   font-weight: 700;
   color: #1a202c;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 
   @media (max-width: 768px) {
     font-size: 2rem;
@@ -28,15 +28,15 @@ export const WhyRecoveryTitle = styled.h2`
 
 export const WhyRecoveryDescription = styled.p`
   font-size: 1.125rem;
-  line-height: 1.8;
+  line-height: 1.4;
   color: #4a5568;
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2.5rem;
 
   @media (max-width: 768px) {
     font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -45,7 +45,8 @@ export const StatHighlight = styled.span`
   font-weight: 700;
   color: #8B5CF6;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.15rem;
 
   @media (max-width: 768px) {
     font-size: 1.25rem;
