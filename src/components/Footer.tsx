@@ -14,7 +14,9 @@ import {
   ContactItem,
   ContactLabel,
   ContactValue,
-  FooterBottom
+  FooterBottom,
+  PaymentIcons,
+  PaymentIcon
 } from '../styles/Footer.styles';
 
 const Footer: React.FC = () => {
@@ -45,9 +47,9 @@ const Footer: React.FC = () => {
             <FooterLogo>
               <svg viewBox="0 0 40 40" fill="none">
                 <circle cx="20" cy="20" r="18" fill="#8B5CF6" opacity="0.1"/>
-                <path d="M28 25v2c0 1.1-.9 2-2 2-9.39 0-17-7.61-17-17 0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25 1.12.37 2.32.57 3.57.57 1.1 0 1.5.9 1.5 2z" stroke="#8B5CF6" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M24 14c1.66 0 3 1.34 3 3" stroke="#8B5CF6" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-                <path d="M24 10c3.87 0 7 3.13 7 7" stroke="#8B5CF6" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                <path d="M14 24L18 20L14 16" stroke="#8B5CF6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 16L24 20L20 24" stroke="#8B5CF6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M26 14L30 20L26 26" stroke="#8B5CF6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               {brandName}
             </FooterLogo>
@@ -56,6 +58,14 @@ const Footer: React.FC = () => {
               <p>{companyAddress}</p>
               <p>Established {process.env.REACT_APP_COMPANY_BIRTH}</p>
             </CompanyInfo>
+            <PaymentIcons>
+              <PaymentIcon>
+                <img src="/visa.svg" alt="Visa" />
+              </PaymentIcon>
+              <PaymentIcon>
+                <img src="/mastercard.svg" alt="Mastercard" />
+              </PaymentIcon>
+            </PaymentIcons>
           </FooterSection>
 
           <FooterSection>
